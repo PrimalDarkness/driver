@@ -38,9 +38,11 @@ jobs:
           ref: ${{ env.UPSTREAM_REF }}
           path: fluffos
 
+      - name: Copy Local Options
+        run: cp driver/overrides/local_options fluffos
 
-      - name: Copy Overrides
-        run: cp driver/overrides/local_options fluffos/src/
+      - name: Copy Dockerfile
+        run: cp driver/overrides/Dockerfile fluffos
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
