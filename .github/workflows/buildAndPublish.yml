@@ -14,7 +14,7 @@ env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ github.repository }}
   UPSTREAM_REPOSITORY: fluffos/fluffos
-  UPSTREAM_REF: master
+  UPSTREAM_REF: v2019.20210429
 
 
 jobs:
